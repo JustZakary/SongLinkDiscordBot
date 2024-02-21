@@ -16,7 +16,7 @@ var emojiIDs = [
   '1209910508648665158',
   '1209909228278382592',
   '1209925589285208134',
-];
+]; //Only for the official bot
 
 const client = new Client({
   intents: [GatewayIntentBits.Guilds, GatewayIntentBits.GuildMessages, GatewayIntentBits.MessageContent],
@@ -56,11 +56,19 @@ client.on('messageCreate', async (message) => {
       var fields = [];
       Object.keys(songData.linksByPlatform).forEach(function (key) {
         if (supported.includes(key)) {
-          fields.push({
-            name: `<:${key}:${emojiIDs[supported.indexOf(key)]}>`,
-            value: `**[${display[supported.indexOf(key)]}](${songData.linksByPlatform[key].url})**\n\n`,
-            inline: true,
-          });
+          if (process.env.CLIENT_ID == '1209899094026490048') {
+            fields.push({
+              name: `<:${key}:${emojiIDs[supported.indexOf(key)]}>`,
+              value: `**[${display[supported.indexOf(key)]}](${songData.linksByPlatform[key].url})**\n\n`,
+              inline: true,
+            });
+          } else {
+            fields.push({
+              name: '\u200B',
+              value: `**[${display[supported.indexOf(key)]}](${songData.linksByPlatform[key].url})**\n\n`,
+              inline: true,
+            });
+          }
         }
       });
       //make fields a multiple of 3
