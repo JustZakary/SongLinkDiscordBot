@@ -1,6 +1,7 @@
 //https://discord.com/oauth2/authorize?client_id=1209899094026490048&scope=bot&permissions=964220545216
 import {Client, EmbedBuilder, GatewayIntentBits} from 'discord.js';
-require('dotenv').config();
+import dotenv from 'dotenv';
+dotenv.config();
 var supported = ['amazonMusic', 'anghami', 'boomplay', 'deezer', 'appleMusic', 'pandora', 'soundcloud', 'tidal', 'youtube', 'youtubeMusic', 'spotify', 'napster'];
 var display = ['Amazon Music', 'Anghami', 'Boomplay', 'Deezer', 'Apple Music', 'Pandora', 'Soundcloud', 'Tidal', 'Youtube', 'Youtube Music', 'Spotify', 'Napster'];
 var emojiIDs = [
