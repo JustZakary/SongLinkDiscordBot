@@ -2,5 +2,15 @@
   "dependencies": {
     "discord.js": "^14.14.1",
     "dotenv": "^16.4.5"
-  }
+  },
+  "name": "songlinkbot",
+  "description": "This README guide explains how to set up and run the Discord Song Link Bot. This bot identifies song links in Discord messages and provides information about the song across different platforms.",
+  "version": "1.0.0",
+  "main": "bot.js",
+  "devDependencies": {},
+  "scripts": {
+    "start": "node bot.js"
+  },
+  "author": "",
+  "license": "ISC"
 }
