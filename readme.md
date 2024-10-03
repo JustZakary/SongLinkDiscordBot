@@ -1,8 +1,8 @@
-# README.md for Discord Song Link Bot
+# Discord Song Link Bot
 
 ## Introduction
 
-This README guide explains how to set up and run the Discord Song Link Bot. This bot identifies song links in Discord messages and provides information about the song across different platforms.
+This bot identifies song links in Discord messages and provides information about the song across different platforms.
 
 ## Requirements
 
@@ -77,7 +77,3 @@ This README guide explains how to set up and run the Discord Song Link Bot. This
 ## Support
 
 - For support, questions, or feature requests, open an issue in the GitHub repository of the bot.
-
----
-
-This README provides a basic guide to getting the bot up and running. For more detailed instructions or troubleshooting, refer to the bot's documentation or repository README file.
