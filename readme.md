@@ -42,7 +42,7 @@ This bot identifies song links in Discord messages and provides information abou
 
 - After configuration, run the bot using the following command in the terminal:
   ```
-  node index.js
+  npm run start
   ```
 - The bot should now be running and responsive to messages in Discord.
 

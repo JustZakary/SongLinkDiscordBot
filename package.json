@@ -1,5 +1,5 @@
 {
-  "name": "songlinkbot",
+  "name": "song-link-discord-bot",
   "version": "1.0.0",
   "description": "This bot identifies song links in Discord messages and provides information about the song across different platforms.",
   "main": "bot.js",
@@ -7,8 +7,8 @@
   "scripts": {
     "start": "node bot.js"
   },
-  "author": "",
-  "license": "ISC",
+  "author": "Zakary Loney",
+  "license": "MIT",
   "dependencies": {
     "discord.js": "^14.14.1",
     "dotenv": "^16.4.5"
